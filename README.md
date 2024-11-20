@@ -2,10 +2,10 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
 
-# Ghost Buster Game
-<div align="center">
-    <img src="images/preview.png" alt="preview" height = "400">
-</div>
+;; # Ghost Buster Game
+;; <div align="center">
+;;     <img src="images/preview.png" alt="preview" height = "400">
+;; </div>
 
 
 > [!IMPORTANT]
