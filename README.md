@@ -4,9 +4,7 @@
 
 # Ghost Buster Game
 <div align="center">
-  <a href="https://github.com/NiemaAM/Ghost-Buster-Game">
     <img src="images/preview.png" alt="preview" height = "400">
-  </a>
 </div>
 
 
