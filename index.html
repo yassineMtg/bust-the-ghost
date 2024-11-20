@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bust the Ghost Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <center><h2>BUST THE GHOST 👻</h2></center>
+    <div class="grid-container">
+        <div class="grid" id="gameGrid"></div>
+        <div class="grid-menu">
+            <div class="info">
+                <p style="font-weight: bold;">Ghosts Remaining: <span style="font-weight: lighter;"  id="ghosts">1</span></p>
+                <p style="font-weight: bold;">Busts Remaining: <span style="font-weight: lighter;" id="busts">2</span></p>
+                <p style="font-weight: bold;">Score: <span style="font-weight: lighter;" id="score">50</span>%</p>
+            </div>
+            <div class="messages-div">
+                <p style="font-weight: bold;">Messages:</p>
+                <div id="messagesBox" style="color: black; background-color:#ebebeb; border: 6px outset #d8d8d8; margin-bottom: 20px; padding: 10px; height: 150px; overflow-y: auto;">
+                    <span style="font-weight: lighter;" id="messages"></span>
+                </div> 
+            </div>           
+            <div class="buttons">
+                    <button class="button" id="bustButton" onclick="bust()" disabled>BUST</button>
+                    <!-- <button class="button" id="timeButton" onclick="time()" disabled>TIME+1</button> -->
+                    <button class="button" id="viewButton" onclick="toggleView()">View</button>
+                    <button class="button" id="directionButton" onclick="toggleDirection()">Directions</button>
+                    <button class="button" id="percentageToggle" onclick="togglePercentage()">Convert to Percentage %</button>
+
+            </div>
+        </div>
+    </div>
+    <div id="endGameScreen" style="background-color: rgba(0, 0, 0, 0.5); height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 99; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;transition: opacity 0.5s ease; display: none">
+        <h1 id="endGameMessage"></h1>
+        <button class="button" id="newGameButton" onclick="newGame()">NEW GAME</button>
+    </div>
+    <script src="game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>

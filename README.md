@@ -2,19 +2,6 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
 
-# Ghost Buster Game
-<div align="center">
-  <a href="https://github.com/NiemaAM/Ghost-Buster-Game">
-    <img src="images/preview.png" alt="preview" height = "400">
-  </a>
-</div>
-
-
-> [!IMPORTANT]
-> 
-> [![Vercel](https://img.shields.io/badge/TRY%20THE%20GAME%20ONLINE!-%23000000.svg?logo=vercel&style=for-the-badge&logoColor=white)](https://ghost-buster-game.vercel.app/)
->
-> [![YouTube](https://img.shields.io/badge/YouTube%20Video%20Demo!-%23FF0000.svg?logo=YouTube&style=for-the-badge&logoColor=white)](#)
 
 ###### Table of contents
 <!--ts-->

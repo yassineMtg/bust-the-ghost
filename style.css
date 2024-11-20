@@ -1,0 +1,397 @@
+/* General styling */
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    user-select: none;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Centered title */
+h2 {
+    text-align: center;
+}
+
+/* Main container */
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0px;
+    gap: 35px;
+    width: 100%;
+}
+
+/* Game grid styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(13, 68px);
+    grid-template-rows: repeat(8, 68px);
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+/* Score and messages box */
+.grid-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.info {
+    margin: 0px;
+}
+
+.messages-div {
+    margin: 0px;
+}
+
+.buttons {
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Cell styling */
+.cell {
+    box-sizing: border-box;
+    width: 65px;
+    height: 65px;
+    border: 6px outset;
+    border-color: #00aeff;
+    background: blue;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    user-select: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+    /*font-weight: 700;*/
+    line-height: 60px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.cell:hover {
+    background-color: #f0f8ff;
+    /* border-color: black; */
+}
+.selected {
+    border: 6px solid black;
+    border-radius: 10px;
+    scale: 0.9;
+}
+
+/* Button styling */
+.button {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #00aeff;
+    border: 3px outset blue;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background-color: #f0f8ff;
+    border-color: white;
+}
+
+.active{
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+
+.inactive, .inactive-percentage{
+    background-color: #00aeff;
+    border-color: blue;
+}
+
+.active-percentage {
+    border-color: orange;
+    background-color: orange;
+}
+
+.active:hover{
+    border-color: white;
+    background-color: lightgreen;
+}
+
+.active-percentage:hover{
+    background-color: orange;
+}
+
+.inactive:hover, .inactive-percentage:hover {
+    border-color: white;
+}
+
+.bust-last-change{
+    background-color: rgb(216, 119, 119);
+    border-color: red;
+    color: white;
+}
+
+.bust-last-change:hover{
+    border-color: black;
+    color: black;
+}
+
+.bust-button{
+    background-color: #00aeff;
+    border-color: blue;
+}
+
+.bust-button:hover{
+    border-color: white;
+}
+
+.button:disabled {
+    background-color: #ebebeb;
+    border: 3px outset #d8d8d8;
+    cursor: not-allowed;
+}
+
+#directionButton .icon {
+    display: inline-block;
+    margin-left: 5px;
+    color: green;
+    transition: color 0.2s ease;
+}
+
+#directionButton.active .icon {
+    color: limegreen;
+}
+
+
+/* End game screen styling */
+#endGameScreen {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.5s ease;
+}
+
+/* Responsive styling */
+@media (max-width: 900px) {
+    .grid-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    /* Make grid smaller and adjust layout */
+    .grid {
+        grid-template-columns: repeat(13, 50px);
+        grid-template-rows: repeat(8, 50px);
+        text-align: center;
+        order: 1;
+    }
+    
+    .grid-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 12px;
+        order: 2;
+    }
+
+    /* Adjust button layout */
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        order: 3;
+    }
+
+    .messages-div {
+        order: 4;
+        width: 80%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Make cells smaller */
+    .cell {
+        width: 50px;
+        height: 50px;
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+        padding: 0px;
+        line-height: 50px; 
+        border: 6px outset ;
+        border-color: #00aeff;
+    }
+
+    .button {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    
+    /* Make grid smaller and adjust layout */
+    .grid {
+        grid-template-columns: repeat(13, 40px);
+        grid-template-rows: repeat(8, 40px);
+        text-align: center;
+        order: 1;
+    }
+    
+    .grid-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 80%;
+        order: 2;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        order: 2;
+    }
+
+    /* Adjust button layout */
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        order: 3;
+    }
+
+    .messages-div {
+        order: 4;
+        width: 80%;
+        height: 50%;
+    }
+
+    /* Make cells smaller */
+    .cell {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+        text-align: center;
+        margin: 0;
+        padding: 0px;
+        line-height: 40px; 
+        border: 4px outset;
+        border-color: #00aeff;
+    }
+
+    .button {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(13, 30px);
+        grid-template-rows: repeat(8, 30px);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    #endGameMessage {
+        font-size: 15px;
+    }
+
+    .cell {
+        width: 30px;
+        height: 30px;
+        line-height: 30px; 
+        font-size: 8px;
+        text-align: center;
+        margin: 0;
+        padding: 0px;
+        border: 2px outset;
+        border-color: #00aeff;
+    }
+    
+    .button {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(13, 25px);
+        grid-template-rows: repeat(8, 25px);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    #endGameMessage {
+        font-size: 15px;
+    }
+
+    .cell {
+        width: 25px;
+        height: 25px;
+        line-height: 25px; 
+        font-size: 8px;
+        text-align: center;
+        margin: 0;
+        padding: 0px;
+        border: 2px outset;
+        border-color: #00aeff;
+    }
+    
+    .button {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+.span{
+    font-size: 8px;
+}
