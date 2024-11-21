@@ -15,7 +15,7 @@
 > 
 > [![Vercel](https://img.shields.io/badge/TRY%20THE%20GAME%20ONLINE!-%23000000.svg?logo=vercel&style=for-the-badge&logoColor=white)](https://bust-ghost.yassinemaatougui.tech/)
 > 
-> [![YouTube](https://img.shields.io/badge/YouTube%20Video%20Demo!-%23FF0000.svg?logo=YouTube&style=for-the-badge&logoColor=white)](https://youtu.be/zjdRetC5ajk)
+> [![YouTube](https://img.shields.io/badge/YouTube%20Video%20Demo!-%23FF0000.svg?logo=YouTube&style=for-the-badge&logoColor=white)]()
 > 
 > [![Github](https://img.shields.io/badge/Preview%20Images%20HERE!-%23000000.svg?logo=Github&style=for-the-badge&logoColor=white)](https://github.com/yassineMtg/bust-the-ghost/tree/main/images)
 
